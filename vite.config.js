@@ -3,7 +3,8 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
     plugins: [vue()],
-    base: '/',
+    // 项目部署在 GitHub Pages 子路径，需与仓库名一致（若仓库名不同请修改）
+    base: '/cannvision/',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
